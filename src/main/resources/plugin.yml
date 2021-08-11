@@ -1,0 +1,4 @@
+name: BleepoAuthTimer
+version: ${project.version}
+main: dev.bleepo.main.Main
+api-version: 1.17

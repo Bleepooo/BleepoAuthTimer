@@ -1,0 +1,13 @@
+#BleeposAuthTimer v1.4
+
+#The amount of time in seconds we allow the player to login / register
+time: 60
+
+#The message we want to send when they take too long to login
+message: '&6Took too long to login.'
+
+#The message we want above the hotbar. Use {time} for a placeholder for the time elapsed
+msg: '&6&lPlease login or register to play. &4&l{time}'
+
+#Do we want to play the level up sound to the player every second?
+sound: true
