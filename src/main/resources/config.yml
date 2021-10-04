@@ -3,7 +3,7 @@
 #The amount of time in seconds we allow the player to login / register
 time: 60
 
-#The message we want to send when they take too long to login
+#The message we want to send when they take too long to login.
 message: '&6Took too long to login.'
 
 #The message we want above the hotbar. Use {time} for a placeholder for the time elapsed
