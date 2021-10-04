@@ -1,4 +1,4 @@
-#BleeposAuthTimer v1.4
+#BleeposAuthTimer v2.0
 
 #The amount of time in seconds we allow the player to login / register
 time: 60
@@ -8,6 +8,28 @@ message: '&6Took too long to login.'
 
 #The message we want above the hotbar. Use {time} for a placeholder for the time elapsed
 msg: '&6&lPlease login or register to play. &4&l{time}'
+
+#Should we freeze the player in place?
+freeze:
+  freeze: true
+  world: 'world_the_end'
+  x: 200
+  y: 256
+  z: 200
+
+#Should we force the players gamemode?
+gamemode:
+  force: true
+  gamemode: 'spectator'
+
+#Should we prevent players from chatting?
+prevent_chat: true
+
+#Should we prevent commands?
+prevent_commands: true
+
+#Should we hide join and leave messages?
+hide_join_messages: true
 
 #Do we want to play the level up sound to the player every second?
 sound: true
