@@ -8,7 +8,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info(ChatColor.AQUA + "BleeposAuthTimer" + ChatColor.GREEN + "is Loaded and Enabled!");
+        getLogger().info(ChatColor.AQUA + "BleeposAuthTimer" + ChatColor.GREEN + " is Loaded and Enabled!");
         getServer().getPluginManager().registerEvents(new timer(this), this);
         getServer().getPluginManager().registerEvents(new freeze(this), this);
         getServer().getPluginManager().registerEvents(new chat(this), this);
@@ -18,6 +18,6 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info(ChatColor.AQUA + "BleeposAuthTimer" + ChatColor.RED + "is Unloaded and Diabled!");
+        getLogger().info(ChatColor.AQUA + "BleeposAuthTimer" + ChatColor.RED + " is Unloaded and Diabled!");
     }
 }
