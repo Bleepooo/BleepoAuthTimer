@@ -47,5 +47,4 @@ public class freeze implements Listener {
         }
         return new Location(plugin.getServer().getWorld(plugin.getConfig().getString("freeze.world")), plugin.getConfig().getInt("freeze.x"), plugin.getConfig().getInt("freeze.y"), plugin.getConfig().getInt("freeze.z"));
     }
-
 }

@@ -23,13 +23,19 @@ gamemode:
   gamemode: 'spectator'
 
 #Should we prevent players from chatting?
-prevent_chat: true
+prevent-chat: true
 
 #Should we prevent commands?
-prevent_commands: true
+prevent-commands: true
+
+#What commands should we keep available?
+enabled-cmds:
+  - '/l'
+  - '/register'
+  - '/login'
 
 #Should we hide join and leave messages?
-hide_join_messages: true
+hide-join-messages: true
 
 #Do we want to play the level up sound to the player every second?
 sound: true

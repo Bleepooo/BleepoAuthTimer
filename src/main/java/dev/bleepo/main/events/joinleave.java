@@ -17,21 +17,21 @@ public class joinleave implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
-        if (plugin.getConfig().getBoolean("hide_join_messages")) {
+        if (plugin.getConfig().getBoolean("hide-join-messages")) {
             e.setJoinMessage("");
         }
     }
 
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e) {
-        if (plugin.getConfig().getBoolean("hide_join_messages")) {
+        if (plugin.getConfig().getBoolean("hide-join-messages")) {
             e.setQuitMessage("");
         }
     }
 //e.getPlayer().setGameMode(GameMode.valueOf(forcedGamemode.toUpperCase()));
     @EventHandler
     public void onPlayerJoin$0(PlayerJoinEvent e) {
-        if (plugin.getConfig().getBoolean("hide_players")) {
+        if (plugin.getConfig().getBoolean("hide-players")) {
             for (Player onlinePlayer : plugin.getServer().getOnlinePlayers()) {
                 e.getPlayer().hidePlayer(plugin, onlinePlayer);
                 onlinePlayer.hidePlayer(plugin, e.getPlayer());
