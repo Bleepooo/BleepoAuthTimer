@@ -16,7 +16,7 @@ public class chat implements Listener {
         this.plugin = plugin;
     }
 
-    private List<String> whitelist;
+    private boolean whitelist;
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
@@ -28,8 +28,7 @@ public class chat implements Listener {
     @EventHandler
     public void onCmd(PlayerCommandPreprocessEvent e) {
         if (plugin.getConfig().getBoolean("prevent-commands")) {
-            whitelist.addAll(plugin.getConfig().getStringList("enabled-cmds"));
-            if (!whitelist.contains(e.getMessage().split(" ")[0].toLowerCase())) {
+            if (!plugin.getConfig().getStringList("enabled-cmds").contains(e.getMessage().split(" ")[0].toLowerCase())) {
                 e.setCancelled(true);
             }
         }
